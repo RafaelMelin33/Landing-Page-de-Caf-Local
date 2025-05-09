@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #FFD59A;
+    --cor2: #8B5C2D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+    position: sticky;
+    top: -46px;
+    z-index: 9;
+}
+
+header nav {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header h1 {
+    padding: 5px;
+    text-align: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #3B2F2F;
+}
+
+.introducao {
+    background-image: url(../img/img_cafeteria.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-attachment: fixed;
+}
+
+.fundo {
+    background-color: white;
+    margin: 0 50px;
+    height: 50vh;
+    opacity: 0.4;
+}
+
+.fundo h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8em;
+}
+
+.fundo p {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.introducao .fundo div {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    background-color: var(--cor1);
+    padding-bottom: 10px;
+}
+
+.fundopag1{
+    height: 100vh;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.sobre h2 {
+    margin-top: 10px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sobre p {
+    padding: 5px;
+    text-indent: 30px;
+}
+
+footer p {
+    background-color: var(--cor2);
+    padding: 5px;
+    color: white;
+    bottom: 10;
+}
+
+.bebidas,.comidas{
+    display: flex;
+    justify-content: space-around;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8em;
+}
+
+.produto {
+    height: 350px;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: var(--cor2);
+    color: white;
+    border-radius: 10px;
+}
+
+.produto h3, .produto p {
+    text-align: center;
+    padding: 5px;
+}
+
+.produto h3 {
+    font-size: 1.5em;
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.produto button{
+    background-color: var(--cor1);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 4px;
+}
+
+.evento{
+    border: 2px dashed black;
+    margin: 10px 100px 0 100px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: left;    
+}
+
+.evento .evento-img{
+    width: 100%;
+}
+
+.evento .evento-img img{
+    width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.evento .evento-info{
+    display: block;
+}
+
+.evento .evento-info h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.evento .evento-info p{
+    text-align: center;
+    padding: 5px;
+}
+
+.programa-fidelidade{
+    display: flex;
+    padding: 4px 100px 0 100px;
+}
+
+.programa-fidelidade div{
+    width: 20%;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.brindes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.brindes img{
+    width: 100px;
+}
