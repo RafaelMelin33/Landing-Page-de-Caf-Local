@@ -184,6 +184,11 @@ h2{
     padding: 5px;
 }
 
+.programa_info{
+    text-indent: 30px;
+    margin: 20px 0 40px 0;
+}
+
 .programa-fidelidade{
     display: flex;
     padding: 4px 100px 0 100px;
@@ -201,5 +206,14 @@ h2{
 }
 
 .brindes img{
-    width: 100px;
+    width: 7%;
+}
+
+.brindes_info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.brindes_info div{
+    width: 10%;
 }
