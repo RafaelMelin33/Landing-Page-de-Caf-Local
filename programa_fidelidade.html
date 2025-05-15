@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa de Fidelidade - Tarde Café</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Programa de Fidelidade - Tarde Café</h1>
@@ -18,7 +20,8 @@
     </header>
     <main>
         <h2>Como Funciona o Programa de Fidelidade</h2>
-        <p>Comprando em nosso site ou em nossa loja física utilizando seu CPF, você acumula pontos que podem ser trocados por descontos e brindes.</p>
+        <p class="programa_info">Comprando em nosso site ou em nossa loja física utilizando seu CPF, você acumula pontos
+            que podem ser trocados por descontos e brindes.</p>
         <div class="brindes">
             <img src="static/img/brinde1.jfif" alt="">
             <img src="static/img/brinde2.jpg" alt="">
@@ -34,19 +37,31 @@
             <div id="brinde4"></div>
             <div id="brinde5"></div>
         </div>
-        <div>
-            <h4>Chocolate talento</h4>
-            <p>Ao gastar R$ 25,00</p>
-            <h4>Cookies artesanais</h4>
-            <p>Ao gastar R$ 50,00</p>
-            <h4>5% de desconto na próxima compra</h4>
-            <p>Ao gastar R$ 75,00</p>
-            <h4>Café expresso de graça na próxima visita</h4>
-            <p>Ao gastar R$ 100,00</p>
-            <h4>Caneca personalizada da Tarde Café</h4>
-            <p>Ao gastar R$ 200,00</p>
-            <h4>25% de desconto na próxima compra</h4>
-            <p>Ao gastar R$ 400,00</p>
+        <div class="brindes_info">
+            <div>
+                <h4>Chocolate talento</h4>
+                <p>Ao gastar R$ 25,00</p>
+            </div>
+            <div>
+                <h4>Cookies artesanais</h4>
+                <p>Ao gastar R$ 50,00</p>
+            </div>
+            <div>
+                <h4>5% de desconto na próxima compra</h4>
+                <p>Ao gastar R$ 75,00</p>
+            </div>
+            <div>
+                <h4>Café expresso de graça na próxima visita</h4>
+                <p>Ao gastar R$ 100,00</p>
+            </div>
+            <div>
+                <h4>Caneca personalizada da Tarde Café</h4>
+                <p>Ao gastar R$ 200,00</p>
+            </div>
+            <div>
+                <h4>25% de desconto na próxima compra</h4>
+                <p>Ao gastar R$ 400,00</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -64,50 +79,50 @@
         let brinde4 = document.getElementById("brinde4");
         let brinde5 = document.getElementById("brinde5");
 
-        brinde1.addEventListener('mouseover', function() {
+        brinde1.addEventListener('mouseover', function () {
             brinde1.style.backgroundColor = "red";
         });
-        brinde1.addEventListener('mouseout', function() {
+        brinde1.addEventListener('mouseout', function () {
             brinde1.style.backgroundColor = "#FFD59A";
         });
-        brinde2.addEventListener('mouseover', function() {
+        brinde2.addEventListener('mouseover', function () {
             brinde1.style.backgroundColor = "red";
             brinde2.style.backgroundColor = "orange";
         });
-        brinde2.addEventListener('mouseout', function() {
+        brinde2.addEventListener('mouseout', function () {
             brinde1.style.backgroundColor = "#FFD59A";
             brinde2.style.backgroundColor = "#FFD59A";
         });
-        brinde3.addEventListener('mouseover', function() {
+        brinde3.addEventListener('mouseover', function () {
             brinde1.style.backgroundColor = "red";
             brinde2.style.backgroundColor = "orange";
             brinde3.style.backgroundColor = "yellow";
         });
-        brinde3.addEventListener('mouseout', function() {
+        brinde3.addEventListener('mouseout', function () {
             brinde1.style.backgroundColor = "#FFD59A";
             brinde2.style.backgroundColor = "#FFD59A";
             brinde3.style.backgroundColor = "#FFD59A";
         });
-        brinde4.addEventListener('mouseover', function() {
+        brinde4.addEventListener('mouseover', function () {
             brinde1.style.backgroundColor = "red";
             brinde2.style.backgroundColor = "orange";
             brinde3.style.backgroundColor = "yellow";
             brinde4.style.backgroundColor = "greenyellow";
         });
-        brinde4.addEventListener('mouseout', function() {
+        brinde4.addEventListener('mouseout', function () {
             brinde1.style.backgroundColor = "#FFD59A";
             brinde2.style.backgroundColor = "#FFD59A";
             brinde3.style.backgroundColor = "#FFD59A";
             brinde4.style.backgroundColor = "#FFD59A";
         });
-        brinde5.addEventListener('mouseover', function() {
+        brinde5.addEventListener('mouseover', function () {
             brinde1.style.backgroundColor = "red";
             brinde2.style.backgroundColor = "orange";
             brinde3.style.backgroundColor = "yellow";
-            brinde4.style.backgroundColor = "greenyellow";  
+            brinde4.style.backgroundColor = "greenyellow";
             brinde5.style.backgroundColor = "green";
         });
-        brinde5.addEventListener('mouseout', function() {
+        brinde5.addEventListener('mouseout', function () {
             brinde1.style.backgroundColor = "#FFD59A";
             brinde2.style.backgroundColor = "#FFD59A";
             brinde3.style.backgroundColor = "#FFD59A";
@@ -116,4 +131,5 @@
         });
     </script>
 </body>
+
 </html>
